@@ -14,3 +14,7 @@ flatpak install flathub io.podman_desktop.PodmanDesktop
 flatpak install flathub io.mpv.Mpv
 flatpak install flathub com.github.tchx84.Flatseal
 flatpak install flathub com.usebottles.bottles
+
+
+
+flatpak run io.podman_desktop.PodmanDesktop
