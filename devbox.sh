@@ -5,7 +5,7 @@
 
 # --- Configuration ---
 # You can change the container name here if you like.
-CONTAINER_NAME="dev-box"
+CONTAINER_NAME="archbox"
 CONTAINER_IMAGE="quay.io/toolbx/arch-toolbox:latest"
 
 # --- Script Start ---
@@ -48,7 +48,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
 cd
-yay -Syyu --noconfirm npm zsh bash spyder typescript eslint helm python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin vscodium-bin antigravity-bin gemini-cli-bin google-chrome
+yay -Syyu --noconfirm npm zsh bash spyder typescript eslint helm python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin vscodium-bin antigravity-bin gemini-cli-bin google-chrome tonelib-jam-bin
 rustup update
 rustup default nightly
 rustup target add wasm32-unknown-unknown
@@ -60,6 +60,7 @@ echo "Exporting applications to host..."
 distrobox-export --app code
 distrobox-export --app codium
 distrobox-export --app antigravity
+distrobox-export --app ToneLib-Jam
 EOF
 
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
