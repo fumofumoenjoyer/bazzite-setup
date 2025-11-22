@@ -83,16 +83,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 EOF
 
 # 6. Set Zsh as the default shell (optional, but recommended)
-if [ "$SHELL" != "$(which zsh)" ]; then
-    print_message "Changing default shell to Zsh. You may be asked for your password."
-    # The `chsh` command requires user interaction, so we check if the script is running in a tty
-    if tty -s; then
-        chsh -s "$(which zsh)"
-    else
-        echo "Cannot change shell in a non-interactive environment."
-        echo "Please run 'chsh -s $(which zsh)' manually."
-    fi
-fi
+echo 'zsh' >> ~/.bashrc
 
 print_message "Installation complete!"
 echo "Please log out and log back in, or start a new terminal session to use Zsh with the new configuration."
