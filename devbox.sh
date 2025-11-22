@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Archlinux development environment setup script
+# Archlinux environment setup script
 #
 
 # --- Configuration ---
@@ -11,7 +11,7 @@ CONTAINER_IMAGE="quay.io/toolbx/arch-toolbox:latest"
 # --- Script Start ---
 set -e # Exit immediately if a command exits with a non-zero status.
 
-echo "🚀 Starting Archlinux Development Environment Setup..."
+echo "🚀 Starting Archlinux Environment Setup..."
 
 # 1. Check if distrobox is installed
 if ! command -v distrobox &> /dev/null; then
@@ -42,7 +42,7 @@ echo "⚙️ Entering container to install tools and export applications..."
 # - Update the  database and install packages without asking for confirmation.
 # - Export the desktop entries for the applications to the host.
 distrobox enter "${CONTAINER_NAME}" -- <<EOF
-echo "Installing dev packages..."
+echo "Installing packages..."
 sudo pacman -S --noconfirm --needed base-devel git
 git clone https://aur.archlinux.org/yay.git
 cd yay
