@@ -61,6 +61,7 @@ distrobox-export --app code
 distrobox-export --app codium
 distrobox-export --app antigravity
 distrobox-export --app ToneLib-Jam
+distrobox-export --app renpy
 EOF
 
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
