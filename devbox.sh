@@ -48,7 +48,7 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
 cd
-yay -Syyu --noconfirm npm zsh bash spyder typescript eslint helm python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin vscodium-bin antigravity-bin gemini-cli google-chrome tonelib-jam-bin
+yay -Syyu --noconfirm npm zsh bash spyder typescript eslint helm python-pip gdb gcc make maven jdk-openjdk kotlin clang llvm lld lldb libc++ cython libclc polly rustup visual-studio-code-bin vscodium-bin antigravity-bin gemini-cli google-chrome tonelib-jam-bin renpy
 rustup update
 rustup default nightly
 rustup target add wasm32-unknown-unknown
