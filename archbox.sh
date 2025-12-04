@@ -60,7 +60,6 @@ echo "Exporting applications to host..."
 distrobox-export --app code
 distrobox-export --app codium
 distrobox-export --app antigravity
-distrobox-export --app ToneLib-Jam
 EOF
 
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
